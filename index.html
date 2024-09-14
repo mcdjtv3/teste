@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposition en Triangle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111; /* Couleur de fond */
+            margin: 0;
+        }
+        .main-container {
+            position: relative;
+            width: 500px; /* Ajustez la taille du conteneur principal */
+            height: 500px; /* Ajustez selon les besoins */
+        }
+        .container {
+            position: absolute;
+            width: 200px; /* Taille ajustable des cercles */
+            height: 200px;
+        }
+        .circle-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .text-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; /* Ajustez la taille pour l'alignement */
+        }
+        
+
+        /* Positionnement spécifique pour les trois éléments */
+        .container-1 {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .container-2 {
+            bottom: 20%;
+            left: 20%;
+            transform: translateX(-50%);
+        }
+        .container-3 {
+            bottom: 20%;
+            right: 20%;
+            transform: translateX(50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="container container-1">
+        <img src="images/Layer.png" alt="Cercle Décoratif" class="circle-layer">
+        <img src="images/frenchtrack.png" alt="French Track" class="text-image">
+        <div class="label">S1</div>
+    </div>
+
+    <div class="container container-2">
+        <img src="images/Layer.png" alt="Cercle Décoratif" class="circle-layer">
+        <img src="images/frenchtrack.png" alt="French Track" class="text-image">
+        <div class="label">S2</div>
+    </div>
+
+    <div class="container container-3">
+        <img src="images/Layer.png" alt="Cercle Décoratif" class="circle-layer">
+        <img src="images/frenchtrack.png" alt="French Track" class="text-image">
+        <div class="label">S3</div>
+    </div>
+</div>
+
+</body>
+</html>
